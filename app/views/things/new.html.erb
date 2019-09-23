@@ -1,0 +1,8 @@
+  <h1>What is the last thing you learned?</h1>
+  <div class="col-10 offset-1 form_box">
+    <%= simple_form_for @thing, url: things_path do |f| %>
+      <%= f.input :name %>
+      <%= f.input :skill %>
+      <%= f.submit 'Submit', class: 'btn btn-primary' %>
+    <% end %>
+  </div>

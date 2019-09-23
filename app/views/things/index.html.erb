@@ -1,0 +1,11 @@
+<div class="col-10 offset-1">
+  <h1>Things we learned</h1>
+  <div>
+    <% @things.each do |thing| %>
+    <strong><%= thing.name %></strong> learned:
+    <%= thing.skill %><br />
+    <% end %>
+
+  </div>
+
+</div>
