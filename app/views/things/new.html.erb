@@ -1,8 +1,13 @@
+<body class="other_page">
   <h1>What is the last thing you learned?</h1>
-  <div class="col-10 offset-1 form_box">
+  <div class="col-8 offset-2 form_box">
     <%= simple_form_for @thing, url: things_path do |f| %>
       <%= f.input :name %>
       <%= f.input :skill %>
       <%= f.submit 'Submit', class: 'btn btn-primary' %>
     <% end %>
   </div>
+  <div class="links text-center">
+    <%= link_to 'Back to main page', root_path %> | <%= link_to 'What people learned', things_path %>
+  </div>
+</body>
