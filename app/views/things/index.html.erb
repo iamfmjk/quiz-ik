@@ -1,5 +1,10 @@
 <div class="col-10 offset-1">
   <h1>Things we learned</h1>
+  <br />
+  <div class="links text-center">
+    <%= link_to 'Back to main page', root_path %> | <%= link_to 'What people learned', things_path %>
+  </div>
+  <br />
   <div class="row">
     <% @things.each do |thing| %>
     <div class="col-sm-auto skill">
